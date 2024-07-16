@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+  }
+  /* Shared styles */
+  .display-flex{
+    display: flex;
+  }
+/* header */
+/* navbar */
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-heading h5{
+            font-size: 16px;
+}
+.nav-menu{
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+       
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+/* hero section */
+.hero{
+    max-width: 1280px;
+    margin-left: 50px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text h1{
+    font-size: 40px;
+
+}
+.hero-text h6{
+    font-weight: 600;
+    margin-top: -40px;
+}
+.hero-text button{
+    color: white;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+.hero-image{
+    background-image: url("../images/Circle\ design.svg");
+    background-size: cover;
+    width: 310px;
+    height: 310px;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img{
+    width: 300px;
+    height: 300px;
+}
+/* logo section */
+.logo{
+    max-width: 1200px;
+    margin: 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.logo .logos{
+    align-self: center;
+    justify-self: center;
+}
+/* popular collection section */
+.popular{
+   max-width: 1200px;
+   margin: 60px 100px;
+   
+}
+.popular h4{
+    text-align: center;
+    margin-bottom: -5px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.it{
+    align-self: center;
+    justify-self: center;
+    height: 405px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.doller{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.it p{
+    font-size: 10px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-top: -40px;
+}
+.it h3{
+    font-weight: 500;
+}
+.seemore{
+    text-align: end;
+    padding-right: 10px;
+    color: #E02C6D;
+    font-size: 10px;
+    font-weight: 700;
+}
+/* join section */
+.join-now{
+    max-width: 1280px;
+    height: 270px;
+    margin: 40px 100px;
+    gap: 70px;
+}
+.join-now .text{
+    flex-direction: column;
+    justify-content: center;
+}
+.join-now .text h3{
+    font-weight: 700;
+    font-size: 25px;
+}
+.join-now .text p{
+    font-weight: 700;
+    opacity: 0.6;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.join-now button{
+    color: white;
+    background-color: #E02C6D;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+/* footer */
+
+.contact-section{
+    max-width: 1280px;
+    background-color: #0b0827;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 23px;
+}
+.contact-section .text p{
+    font-size: 11px;
+    margin-top: -20px;
+}
+.contact-section .text h4{
+    font-size: 24px;
+}
+.contact-section .icons{
+        gap: 30px;
+    
+}
+/* Responsive layout for mobile */
+@media screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-menu{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #ct{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    #sc{
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 50px auto;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .logo{
+        grid-template-areas: 
+        "ali ama dara ebay"
+        ". raku tar wal .";
+     }
+    .ali{
+       grid-area: ali;
+    }
+    .ama{
+        grid-area: ama;
+    }
+    .dara{
+        grid-area: dara;
+    }
+    .ebay{
+        grid-area: ebay;
+    }
+    .raku{
+        grid-area: raku;
+    }
+    .tar{
+        grid-area: tar;
+    }
+    .wal{
+        grid-area: wal;
+    }
+    .collections{
+        grid-template-columns: 1fr;
+    }
+    .join-now{
+        flex-direction: column-reverse;
+        margin-top: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .join-now{
+        text-align: center;
+    }
+    .join-now button{
+        margin: 0 auto;
+    }
+}
